@@ -1,7 +1,7 @@
 {
-  "conventionalCommits.scopes": ["frontend"],
+  "conventionalCommits.scopes": ["frontend", "shared-ui", "storybook"],
   "npm.packageManager": "yarn",
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
