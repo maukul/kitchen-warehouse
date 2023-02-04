@@ -6,6 +6,7 @@ export const Button = (props: ButtonProps) => {
   const {
     color,
     type = 'button',
+    buttonType = 'button',
     active = false,
     size = 'normal',
     wide = false,
@@ -57,6 +58,7 @@ export const Button = (props: ButtonProps) => {
         className,
       })}
       disabled={disabled}
+      type={buttonType}
     >
       {children}
     </button>

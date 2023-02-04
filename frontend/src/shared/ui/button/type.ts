@@ -9,6 +9,7 @@ export type ButtonProps = {
     | 'success'
     | 'warning'
     | 'error';
+  buttonType?: 'button' | 'submit' | 'reset';
   type?: 'button' | 'text' | 'link' | 'outline';
   size?: 'normal' | 'lg' | 'sm' | 'xs';
   active?: boolean;
