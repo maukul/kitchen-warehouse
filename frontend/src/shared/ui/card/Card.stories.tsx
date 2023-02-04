@@ -1,16 +1,16 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import '../../../app/index.css';
-import { Hero } from './Card';
+import '@/app/index.css';
+import { Card } from './Card';
 
 export default {
-  title: 'Hero',
-  component: Hero,
-} as ComponentMeta<typeof Hero>;
+  title: 'Card',
+  component: Card,
+} as ComponentMeta<typeof Card>;
 
-const Template: ComponentStory<typeof Hero> = (args) => <Hero {...args} />;
+const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
 
 export const Base = Template.bind({});
 
 Base.args = {
-  children: 'Hero',
+  children: 'Card',
 };

@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { useState } from 'react';
-import '../../../app/index.css';
+
+import '@/app/index.css';
 import { TextInput } from './TextInput';
 
 export default {

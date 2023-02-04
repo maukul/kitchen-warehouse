@@ -1,4 +1,5 @@
-// const { mergeConfig } = require('vite');
+const path = require('path');
+const tsconfigPaths = require('vite-tsconfig-paths').default;
 
 module.exports = {
   stories: ['../src/**/*.stories.@(ts|tsx)'],
@@ -14,15 +15,14 @@ module.exports = {
   features: {
     storyStoreV7: true,
   },
-  // async viteFinal(config) {
-  //   // Merge custom configuration into the default config
-  //   return mergeConfig(config, {
-  //     // Use the same "resolve" configuration as your app
-  //     // resolve: (await import('../vite.config.js')).default.resolve,
-  //     // Add dependencies to pre-optimization
-  //     optimizeDeps: {
-  //       include: ['storybook-dark-mode'],
-  //     },
-  //   });
-  // },
+  async viteFinal(config) {
+    config.plugins.push(
+      /** @see https://github.com/aleclarson/vite-tsconfig-paths */
+      tsconfigPaths({
+        projects: [path.resolve(path.dirname(__dirname), 'tsconfig.json')],
+      })
+    );
+
+    return config;
+  },
 };

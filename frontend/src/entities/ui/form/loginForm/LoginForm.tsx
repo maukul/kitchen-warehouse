@@ -1,9 +1,9 @@
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import { Card } from '../../../../shared/ui/card';
-import { TextInput } from '../../../../shared/ui/textInput';
-import { Button } from '../../../../shared/ui/button';
+import { Card } from '@/shared/ui/card';
+import { TextInput } from '@/shared/ui/textInput';
+import { Button } from '@/shared/ui/button';
 
 import type { LoginFormProps } from './type';
 
@@ -24,9 +24,11 @@ export const LoginForm = (props: LoginFormProps) => {
         <Controller
           name="email"
           control={control}
-          render={({ field, fieldState }) => (
+          render={({ field: { onChange, onBlur, value }, fieldState }) => (
             <TextInput
-              {...field}
+              onChange={onChange}
+              onBlur={onBlur}
+              value={value}
               size="md"
               error={fieldState.error?.message}
               label="Електронна пошта"
@@ -37,9 +39,11 @@ export const LoginForm = (props: LoginFormProps) => {
         <Controller
           name="password"
           control={control}
-          render={({ field, fieldState }) => (
+          render={({ field: { onChange, onBlur, value }, fieldState }) => (
             <TextInput
-              {...field}
+              onChange={onChange}
+              onBlur={onBlur}
+              value={value}
               size="md"
               error={fieldState.error?.message}
               label="Пароль"

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
-import { LoginForm, LoginFormValue } from '../../../entities/ui/form/loginForm';
-import { Hero } from '../../../shared/ui/hero';
+import { LoginForm, LoginFormValue } from '@/entities/ui/form/loginForm';
+import { Hero } from '@/shared/ui/hero';
 
 const schemaValidationLoginForm = z.object({
   email: z.string().email(),

@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import '../../../../app/index.css';
+import '@/app/index.css';
 import { LoginForm } from './LoginForm';
 
 export default {
