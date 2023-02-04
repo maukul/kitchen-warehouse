@@ -3,7 +3,8 @@
     "frontend",
     "shared-ui",
     "storybook",
-    "vsCode"
+    "vsCode",
+    "entities"
   ],
   "npm.packageManager": "yarn",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
