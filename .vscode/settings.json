@@ -2,6 +2,7 @@
   "conventionalCommits.scopes": [
     "frontend",
     "shared-ui",
+    "shared-type",
     "storybook",
     "vsCode",
     "entities",
