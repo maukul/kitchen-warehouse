@@ -1,5 +1,10 @@
 {
-  "conventionalCommits.scopes": ["frontend", "shared-ui", "storybook"],
+  "conventionalCommits.scopes": [
+    "frontend",
+    "shared-ui",
+    "storybook",
+    "vsCode"
+  ],
   "npm.packageManager": "yarn",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -9,5 +14,6 @@
   },
   "css.validate": false,
   "scss.validate": false,
-  "stylelint.validate": ["css", "postcss", "scss"]
+  "stylelint.validate": ["css", "postcss", "scss"],
+  "cSpell.language": "en,uk"
 }
