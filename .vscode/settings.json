@@ -4,7 +4,8 @@
     "shared-ui",
     "storybook",
     "vsCode",
-    "entities"
+    "entities",
+    "pages"
   ],
   "npm.packageManager": "yarn",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
