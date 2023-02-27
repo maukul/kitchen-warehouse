@@ -1,4 +1,5 @@
 import React from 'react';
+import { ClassNameType } from '@/shared/type';
 
 export type ButtonProps = {
   color?:
@@ -18,6 +19,7 @@ export type ButtonProps = {
   block?: boolean;
   circle?: boolean;
   square?: boolean;
-  className?: string | string[] | object | object[];
+  className?: ClassNameType;
   children: React.ReactNode;
+  onClick: () => void;
 };

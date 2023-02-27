@@ -16,9 +16,11 @@ export const Button = (props: ButtonProps) => {
     square = false,
     className,
     children,
+    onClick,
   } = props;
   return (
     <button
+      onClick={onClick}
       className={clsx({
         btn: true,
         // colors
@@ -55,7 +57,7 @@ export const Button = (props: ButtonProps) => {
         // square
         'btn-square': square,
 
-        className,
+        ...className,
       })}
       disabled={disabled}
       type={buttonType}
