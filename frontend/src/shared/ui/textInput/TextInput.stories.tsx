@@ -1,6 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import '@/app/index.css';
 import { TextInput } from './TextInput';
 
 export default {

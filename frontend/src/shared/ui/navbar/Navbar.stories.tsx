@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import '@/app/index.css';
+
 import { Navbar } from './Navbar';
 
 export default {
