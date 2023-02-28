@@ -1,1 +1,1 @@
-export type ClassNameType = string | string[] | object | object[];
+export type ClassNameType = Record<string, boolean>;
