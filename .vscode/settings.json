@@ -3,6 +3,7 @@
     "frontend",
     "shared-ui",
     "shared-type",
+    "shared-constants",
     "storybook",
     "vsCode",
     "entities",
